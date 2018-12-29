@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    max-width: 100%;
+    font-family: 'Changa', sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+}
+
+/* TOP NAVBAR */
+.top-nav{
+    background-color: #1F1E1E;
+}
+.top-nav ul{
+    width: 80%;
+    list-style-type: none;
+    margin: auto;
+    padding: 8px 0;
+}
+.top-nav ul li{
+    display: inline;
+    padding: 0 15px;
+}
+
+.top-nav ul li a{
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none
+}
+
+/* LOGO */
+
+.logo{
+    display: flex;
+    padding: 50px;
+    background-color: rgba(14,132,69,.78);
+    align-content: center;
+    justify-content: center;
+}
+
+/* MAIN NAVBAR */
+
+.main-nav{
+    background-color: #1F1E1E;
+}
+.main-nav ul{
+    display: flex;
+    width: 80%;
+    list-style-type: none;
+    margin: auto;
+    
+}
+.main-nav ul li{
+    width: 100%;
+}
+
+.main-nav ul li a{
+    font-size: 24px;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    border-bottom: solid 5px #373837;
+    border-inline-start: solid 0.5px #373837;
+    border-inline-end: solid 0.5px #373837;
+    justify-content: center;
+    padding: 10px 0;
+}
+.main-nav ul li .active{
+    border-bottom: solid 5px #17B14F;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: solid 5px #17B14F;
+}
+
+/* MAIN */
+
+main .container{
+    width: 80%;
+    background-color: rgba(14,132,69,.48);
+    padding: 10px;
+    margin: 20px auto ;
+}
+
+main .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+#recently-posted{
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 20px;
+    border-right: solid 5px #fff;
+    min-width: 225px;
+    background-color: rgba(33, 37, 35, 0.30);
+    padding: 0 10px;
+
+}
+
+.posts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.post{
+    display: inline-block;
+    border: solid 3px rgba(72, 139, 91, 0.781);
+    width: 19%;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+}
+
+.post .anime-title{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.post .poster{
+    height: 100%;
+}
+
+.post .episode-num{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.views-num{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    background-color: rgba(0, 0, 0, 0.40);
+    opacity: 0;
+    filter: blur(10px);
+}
+/* POST HOVER */
+
+.post:hover > .views-num{
+    opacity: 1;
+    filter: blur(0px);
+    transition-duration: 0.5s;
+}
+
+/* Pagination */
+
+.paging-bar{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.paging-bar li a{
+    background-color: #1A1B1A;
+    padding: 3px 10px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.paging-bar li .active{
+    color: #FADB45;
+}
+
+/* Footer */
+
+.copyright-notice{
+    background-color: rgba(5, 126, 29, 0.396);
+    width: 97%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.copyright-notice p{
+    width: 97%;
+    direction: ltr;
+    margin: auto;
+}
+
+.copyright{
+    display: flex;
+    border-top: solid 5px gray;
+    background-color: rgba(0, 0, 0, 0.725);
+    justify-content: space-between;
+    padding: 50px;
+}
